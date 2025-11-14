@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Zona Plus | Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #111;
+            color: #eee;
+        }
+        header {
+            background-color: #c8102e;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: white;
+        }
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #c8102e;
+        }
+
+        /* 🎬 Banner principal */
+        .banner {
+            background: linear-gradient(135deg, #c8102e, #ff2e63, #222);
+            background-size: 400% 400%;
+            animation: bannerAnim 10s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 5px solid #c8102e;
+        }
+        @keyframes bannerAnim {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .banner h2 {
+            font-size: 45px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        .banner p {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 25px;
+        }
+        .banner a {
+            background-color: white;
+            color: #c8102e;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .banner a:hover {
+            background-color: #c8102e;
+            color: white;
+        }
+
+        main {
+            padding: 30px 20px;
+            text-align: center;
+        }
+        main h3 {
+            color: #c8102e;
+        }
+        footer {
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cine Zona Plus</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="mision.html">Misión</a>
+        <a href="vision.html">Visión</a>
+        <a href="resena.html">Reseña Histórica</a>
+        <a href="cartelera.html">Cartelera</a>
+        <a href="promociones.html">Promociones 2x1</a>
+        <a href="menu-helados.html">Menú Helados</a>
+        <a href="menu-comidas.html">Comidas Rápidas</a>
+        <a href="menu-bebidas.html">Bebidas</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Disenadores.html">Diseñadores</a>
+    </nav>
+
+    <!-- 🎥 Banner principal -->
+    <section class="banner">
+        <h2>¡Bienvenido a Cine Zona Plus!</h2>
+        <p>Vive la magia del cine con la mejor tecnología, sonido envolvente y un ambiente único para disfrutar en familia o con amigos.</p>
+        <a href="cartelera.html">Ver Cartelera</a>
+    </section>
+
+    <main>
+        <h3>Tu cine favorito en la ciudad</h3>
+        <p>Disfruta de nuestras salas cómodas, deliciosas comidas, promociones exclusivas y la mejor atención para que cada función sea una experiencia inolvidable.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cine Zona Plus. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

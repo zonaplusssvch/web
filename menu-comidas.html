@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Zona Plus | Comidas Rápidas</title>
+    <style>
+        /* ===========================
+           ESTILOS GENERALES
+        ============================ */
+        :root {
+            --rojo-principal: #c8102e;
+            --negro: #111;
+            --gris-oscuro: #222;
+            --gris-claro: #eee;
+            --blanco: #fff;
+            --dorado: #ffd700;
+            --naranja: #ff8c00;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: var(--negro);
+            color: var(--gris-claro);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           ENCABEZADO Y MENÚ
+        ============================ */
+        header {
+            background-color: var(--rojo-principal);
+            text-align: center;
+            padding: 20px 0;
+            color: var(--blanco);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: var(--gris-oscuro);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 12px 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--rojo-principal);
+        }
+
+        /* ===========================
+           CONTENIDO PRINCIPAL
+        ============================ */
+        main {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--dorado);
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background-color: var(--gris-oscuro);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(200, 16, 46, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .info h3 {
+            color: var(--naranja);
+            margin: 10px 0;
+        }
+
+        .info p {
+            font-size: 0.95em;
+            margin: 5px 0;
+        }
+
+        .precio {
+            margin-top: 10px;
+            color: var(--dorado);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* ===========================
+           PIE DE PÁGINA
+        ============================ */
+        footer {
+            background-color: var(--gris-oscuro);
+            color: var(--gris-claro);
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }
+
+        /* ===========================
+           RESPONSIVE DESIGN
+        ============================ */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Cine Zona Plus</h1>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="mision.html">Misión</a>
+        <a href="vision.html">Visión</a>
+        <a href="resena.html">Reseña Histórica</a>
+        <a href="cartelera.html">Cartelera</a>
+        <a href="promociones.html">Promociones 2x1</a>
+        <a href="menu-helados.html">Menú Helados</a>
+        <a href="menu-comidas.html">Comidas Rápidas</a>
+        <a href="menu-bebidas.html">Bebidas</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Disenadores.html">Diseñadores</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <h2>Comidas Rápidas</h2>
+        <p>Disfruta nuestras deliciosas comidas mientras ves tu película favorita 🍔🍟</p>
+
+        <div class="menu-grid">
+            <!-- Hamburguesa -->
+            <div class="producto">
+                <img src="sandwichtradicional.jpg" alt="Sandwich Tradicional + Gaseosa">
+                <div class="info">
+                    <h3>Sandwich Tradicional + Gaseosa</h3>
+                    <p>Pan Fresco, Jamon y queso cheddar.</p>
+                    <div class="precio">$6.000</div>
+                </div>
+            </div>
+
+            <!-- Papas Fritas -->
+            <div class="producto">
+                <img src="pollosnack.jpg" alt="Pollosnack">
+                <div class="info">
+                    <h3>Pollosnack</h3>
+                    <p>Crujientes y dorados, el acompañamiento perfecto.</p>
+                    <div class="precio">$19.000</div>
+                </div>
+            </div>
+
+            <!-- Hot Dog -->
+            <div class="producto">
+                <img src="alitas-grandes.jpg" alt="Alitas Grandes">
+                <div class="info">
+                    <h3>Alitas Grandes</h3>
+                    <p>Apanadas o BBQ a tu gusto, acompañadas de papa a la francesa</p>
+                    <div class="precio">$50.000</div>
+                </div>
+            </div>
+
+            <!-- Nachos -->
+            <div class="producto">
+                <img src="sandwichpollo.jpg" alt="Sandwich de Pollo + Gaseosa">
+                <div class="info">
+                    <h3>Sandwich de Pollo + Gaseosa</h3>
+                    <p>Tortilla chips crujientes con queso fundido y jalapeños.</p>
+                    <div class="precio">$10.000</div>
+                </div>
+            </div>
+
+            <!-- Pizza Personal -->
+            <div class="producto">
+                <img src="choripapa.jpg" alt="Choripapa">
+                <div class="info">
+                    <h3>Choripapa</h3>
+                    <p>Crujientes y dorados, el acompañamiento perfecto.</p>
+                    <div class="precio">$12.000</div>
+                </div>
+            </div>
+
+            <!-- Aros de Cebolla -->
+            <div class="producto">
+                <img src="alas-medianas.jpg" alt="Alitas Medianas">
+                <div class="info">
+                    <h3>Alitas Medianas</h3>
+                    <p>Apanadas o BBQ a tu gusto, acompañadas de papa a la francesa</p>
+                    <div class="precio">$32.000</div>
+                </div>
+            </div>
+        
+
+          <div class="producto">
+                <img src="hotdog.jpg" alt="Hot Dog">
+                <div class="info">
+                    <h3>Hot Dog</h3>
+                    <p>Pan Fresco, salchicha de tu gusto y queso cheddar.</p>
+                    <div class="precio">$10.000</div>
+                </div>
+            </div>
+        
+          <div class="producto">
+                <img src="hotdog+papa+gaseosa.jpg" alt="Hot Dog + Papas + Gaseosa">
+                <div class="info">
+                    <h3>Hot Dog + Papas + Gaseosa</h3>
+                    <p>Pan Fresco, salchicha de tu gusto y queso cheddar + Gaseosa.</p>
+                    <div class="precio">$15.000</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 Cine Zona Plus. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

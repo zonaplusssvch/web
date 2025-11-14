@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Zona Plus | Menú de Helados</title>
+    <style>
+        /* ===========================
+           ESTILOS GENERALES
+        ============================ */
+        :root {
+            --rojo-principal: #c8102e;
+            --negro: #111;
+            --gris-oscuro: #222;
+            --gris-claro: #eee;
+            --blanco: #fff;
+            --dorado: #ffd700;
+            --rosa: #ff69b4;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: var(--negro);
+            color: var(--gris-claro);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           ENCABEZADO Y MENÚ
+        ============================ */
+        header {
+            background-color: var(--rojo-principal);
+            text-align: center;
+            padding: 20px 0;
+            color: var(--blanco);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: var(--gris-oscuro);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 12px 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--rojo-principal);
+        }
+
+        /* ===========================
+           CONTENIDO PRINCIPAL
+        ============================ */
+        main {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--dorado);
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background-color: var(--gris-oscuro);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(200, 16, 46, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .info h3 {
+            color: var(--rosa);
+            margin: 10px 0;
+        }
+
+        .info p {
+            font-size: 0.95em;
+            margin: 5px 0;
+        }
+
+        .precio {
+            margin-top: 10px;
+            color: var(--dorado);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* ===========================
+           PIE DE PÁGINA
+        ============================ */
+        footer {
+            background-color: var(--gris-oscuro);
+            color: var(--gris-claro);
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }
+
+        /* ===========================
+           RESPONSIVE DESIGN
+        ============================ */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Cine Zona Plus</h1>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="mision.html">Misión</a>
+        <a href="vision.html">Visión</a>
+        <a href="resena.html">Reseña Histórica</a>
+        <a href="cartelera.html">Cartelera</a>
+        <a href="promociones.html">Promociones 2x1</a>
+        <a href="menu-helados.html">Menú Helados</a>
+        <a href="menu-comidas.html">Comidas Rápidas</a>
+        <a href="menu-bebidas.html">Bebidas</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Disenadores.html">Diseñadores</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <h2>Menú de Helados</h2>
+        <p>Disfruta nuestros deliciosos helados artesanales mientras ves tu película favorita </p>
+
+        <div class="menu-grid">
+
+             <div class="producto">
+                <img src="cono-sencillo.jpg" alt="Cono Sencillo">
+                <div class="info">
+                    <h3>Cono Sencillo</h3>
+                    <p>Exótico y tropical, con sabor intenso y natural.</p>
+                    <div class="precio">$4.000</div>
+                </div>
+            </div>
+
+                <div class="producto">
+                <img src="cono-doble.jpg" alt="Cono Doble">
+                <div class="info">
+                    <h3>Cono Doble </h3>
+                    <p>Exótico y tropical, con sabor intenso y natural.</p>
+                    <div class="precio">$7.000</div>
+                </div>
+            </div>
+
+            <!-- Helado 1 -->
+            <div class="producto">
+                <img src="ensalada-frutas.jpg" alt="Ensalada de frutas grande">
+                <div class="info">
+                    <h3>Ensalada de Futas grande </h3>
+                    <p>Clásico sabor cremoso natural.</p>
+                    <div class="precio">$18.000</div>
+                </div>
+            </div>
+
+            <!-- Helado 2 -->
+            <div class="producto">
+                <img src="chocolate.jpg" alt="Copa de Chocolate">
+                <div class="info">
+                    <h3>Copa de Chocolate</h3>
+                    <p>Rico, cremoso y con trozos de cacao puro.</p>
+                    <div class="precio">$14.000</div>
+                </div>
+            </div>
+
+            <!-- Helado 3 -->
+            <div class="producto">
+                <img src="fresas.jpg" alt="Copa Fresas">
+                <div class="info">
+                    <h3>Copa de fresas con helado</h3>
+                    <p>Hecho con fresas naturales, dulce y refrescante.</p>
+                    <div class="precio">$16.000</div>
+                </div>
+            </div>
+
+            <!-- Helado 4 -->
+            <div class="producto">
+                <img src="mini.jpg" alt="Mini Fiesta">
+                <div class="info">
+                    <h3>Mini Fiesta</h3>
+                    <p>Una mezcla fresca con chispas crujientes.</p>
+                    <div class="precio">$9.000</div>
+                </div>
+            </div>
+
+            <!-- Helado 5 -->
+            <div class="producto">
+                <img src="copa-frutas.jpg" alt="Copa de frutas">
+                <div class="info">
+                    <h3>Copa de Frutas</h3>
+                    <p>Exótico y tropical, con sabor intenso y natural.</p>
+                    <div class="precio">$14.000</div>
+                </div>
+            </div>
+
+             <div class="producto">
+                <img src="gusano.jpg" alt="Gusano">
+                <div class="info">
+                    <h3>Gusano</h3>
+                    <p>Exótico y tropical, con sabor intenso y natural.</p>
+                    <div class="precio">$14.000</div>
+                </div>
+            </div>
+
+             <div class="producto">
+                <img src="brownie.jpg" alt="Brownie con Helado">
+                <div class="info">
+                    <h3>Brownie con Helado</h3>
+                    <p>Exótico y tropical, con sabor intenso y natural.</p>
+                    <div class="precio">$12.000</div>
+                </div>
+            </div>
+
+             <div class="producto">
+                <img src="pulpito.jpg" alt="Pulpito">
+                <div class="info">
+                    <h3>Pulpito</h3>
+                    <p>Exótico y tropical, con sabor intenso y natural.</p>
+                    <div class="precio">$12.000</div>
+                </div>
+            </div>
+
+
+             <div class="producto">
+                <img src="canasta.jpg" alt="Canasta Doble">
+                <div class="info">
+                    <h3>Canasta Doble</h3>
+                    <p>Exótico y tropical, con sabor intenso y natural.</p>
+                    <div class="precio">$12.000</div>
+                </div>
+            </div>
+
+            <!-- Helado 6 -->
+            <div class="producto">
+                <img src="banana.jpg" alt="Banana Split">
+                <div class="info">
+                    <h3>Banana Split</h3>
+                    <p>Combinación de tres sabores, frutas y sirope.</p>
+                    <div class="precio">$9.000</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 Cine Zona Plus. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

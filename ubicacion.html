@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Zona Plus | Ubicación</title>
+    <style>
+        /* ===========================
+           ESTILOS GENERALES
+        ============================ */
+        :root {
+            --rojo-principal: #c8102e;
+            --negro: #111;
+            --gris-oscuro: #222;
+            --gris-claro: #eee;
+            --blanco: #fff;
+            --dorado: #ffd700;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: var(--negro);
+            color: var(--gris-claro);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           ENCABEZADO Y MENÚ
+        ============================ */
+        header {
+            background-color: var(--rojo-principal);
+            text-align: center;
+            padding: 20px 0;
+            color: var(--blanco);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: var(--gris-oscuro);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 12px 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--rojo-principal);
+        }
+
+        /* ===========================
+           CONTENIDO PRINCIPAL
+        ============================ */
+        main {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--dorado);
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        /* ===========================
+           MAPA
+        ============================ */
+        .mapa-container {
+            width: 100%;
+            height: 450px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(200, 16, 46, 0.3);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* ===========================
+           INFORMACIÓN DE CONTACTO
+        ============================ */
+        .info-contacto {
+            background-color: var(--gris-oscuro);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(200, 16, 46, 0.3);
+        }
+
+        .info-contacto p {
+            margin: 10px 0;
+            font-size: 1.05em;
+        }
+
+        /* ===========================
+           PIE DE PÁGINA
+        ============================ */
+        footer {
+            background-color: var(--gris-oscuro);
+            color: var(--gris-claro);
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* ===========================
+           RESPONSIVE
+        ============================ */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Cine Zona Plus</h1>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="mision.html">Misión</a>
+        <a href="vision.html">Visión</a>
+        <a href="resena.html">Reseña Histórica</a>
+        <a href="cartelera.html">Cartelera</a>
+        <a href="promociones.html">Promociones 2x1</a>
+        <a href="menu-helados.html">Menú Helados</a>
+        <a href="menu-comidas.html">Comidas Rápidas</a>
+        <a href="menu-bebidas.html">Bebidas</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Disenadores.html">Diseñadores</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <h2>Ubicación</h2>
+        <p>Encuéntranos fácilmente en la ciudad y disfruta de la mejor experiencia cinematográfica.</p>
+
+        <!-- MAPA -->
+        <div class="mapa-container">
+            <iframe src="https://www.google.com/maps/place/Zona+Plus/@6.8789493,-73.4063786,17z/data=!4m6!3m5!1s0x8e682bc7e6148775:0xde8fb90671ba4ffb!8m2!3d6.8798281!4d-73.4089213!16s%2Fg%2F11wn11vnbm?entry=ttu&g_ep=EgoyMDI1MTExMC4wIKXMDSoASAFQAw%3D%3D" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- INFORMACIÓN DE CONTACTO -->
+        <div class="info-contacto">
+            <p><strong>Dirección:</strong> Calle 10 #9-32 segundo Piso</p>
+            <p><strong>Teléfono:</strong> +57 310 7838280</p>
+            <p><strong>Email:</strong> zonaplussanvicente@gmail.com</p>
+            <p><strong>Horario:</strong> Lunes a Domingo, 2:00 PM - 10:00 PM</p>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 Cine Zona Plus. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

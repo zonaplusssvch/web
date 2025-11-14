@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Zona Plus | Promociones 2x1</title>
+    <style>
+        /* ===========================
+           ESTILOS GENERALES
+        ============================ */
+        :root {
+            --rojo-principal: #c8102e;
+            --negro: #111;
+            --gris-oscuro: #222;
+            --gris-claro: #eee;
+            --blanco: #fff;
+            --dorado: #ffd700;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: var(--negro);
+            color: var(--blanco);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* ===========================
+           ENCABEZADO Y MENÚ
+        ============================ */
+        header {
+            background-color: var(--rojo-principal);
+            padding: 20px 0;
+            color: var(--blanco);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: var(--gris-oscuro);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 12px 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--rojo-principal);
+        }
+
+        /* ===========================
+           CARTEL DE PROMOCIÓN
+        ============================ */
+        .cartel {
+            margin: 80px auto;
+            padding: 60px 30px;
+            max-width: 800px;
+            background: linear-gradient(135deg, #c8102e, #8b0000);
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+            border: 4px solid var(--dorado);
+            color: var(--blanco);
+            text-transform: uppercase;
+        }
+
+        .cartel h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: var(--dorado);
+        }
+
+        .cartel p {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .emoji {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        /* ===========================
+           PIE DE PÁGINA
+        ============================ */
+        footer {
+            background-color: var(--gris-oscuro);
+            color: var(--gris-claro);
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }
+
+        /* ===========================
+           RESPONSIVE DESIGN
+        ============================ */
+        @media (max-width: 768px) {
+            .cartel {
+                padding: 40px 20px;
+            }
+            .cartel h2 {
+                font-size: 2em;
+            }
+            .cartel p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Cine Zona Plus</h1>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="mision.html">Misión</a>
+        <a href="vision.html">Visión</a>
+        <a href="resena.html">Reseña Histórica</a>
+        <a href="cartelera.html">Cartelera</a>
+        <a href="promociones.html">Promociones 2x1</a>
+        <a href="menu-helados.html">Menú Helados</a>
+        <a href="menu-comidas.html">Comidas Rápidas</a>
+        <a href="menu-bebidas.html">Bebidas</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Disenadores.html">Diseñadores</a>
+    </nav>
+
+    <!-- CARTEL DE PROMOCIÓN -->
+    <section class="cartel">
+        <div class="emoji">🍿🎬✨</div>
+        <h2>¡Promoción Especial!</h2>
+        <p>Los <strong>miércoles</strong> y <strong>jueves</strong> disfruta de nuestra increíble oferta:</p>
+        <p style="margin-top:20px; font-size:2em; font-weight:bold; color:#fff;">🎟️ 2x1 en todas las funciones 🎟️</p>
+        <p style="margin-top:25px; font-size:1.2em;">Aplica para todas las películas en cartelera.<br>¡Ven con un amigo y paga solo una entrada!</p>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 Cine Zona Plus. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Zona Plus | Bebidas</title>
+    <style>
+        /* ===========================
+           ESTILOS GENERALES
+        ============================ */
+        :root {
+            --rojo-principal: #c8102e;
+            --negro: #111;
+            --gris-oscuro: #222;
+            --gris-claro: #eee;
+            --blanco: #fff;
+            --dorado: #ffd700;
+            --azul: #1e90ff;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: var(--negro);
+            color: var(--gris-claro);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           ENCABEZADO Y MENÚ
+        ============================ */
+        header {
+            background-color: var(--rojo-principal);
+            text-align: center;
+            padding: 20px 0;
+            color: var(--blanco);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: var(--gris-oscuro);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 12px 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--rojo-principal);
+        }
+
+        /* ===========================
+           CONTENIDO PRINCIPAL
+        ============================ */
+        main {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--dorado);
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background-color: var(--gris-oscuro);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(200, 16, 46, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .info h3 {
+            color: var(--azul);
+            margin: 10px 0;
+        }
+
+        .info p {
+            font-size: 0.95em;
+            margin: 5px 0;
+        }
+
+        .precio {
+            margin-top: 10px;
+            color: var(--dorado);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* ===========================
+           PIE DE PÁGINA
+        ============================ */
+        footer {
+            background-color: var(--gris-oscuro);
+            color: var(--gris-claro);
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }
+
+        /* ===========================
+           RESPONSIVE DESIGN
+        ============================ */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Cine Zona Plus</h1>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="mision.html">Misión</a>
+        <a href="vision.html">Visión</a>
+        <a href="resena.html">Reseña Histórica</a>
+        <a href="cartelera.html">Cartelera</a>
+        <a href="promociones.html">Promociones 2x1</a>
+        <a href="menu-helados.html">Menú Helados</a>
+        <a href="menu-comidas.html">Comidas Rápidas</a>
+        <a href="menu-bebidas.html">Bebidas</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Disenadores.html">Diseñadores</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <h2>Menú de Bebidas</h2>
+        <p>Refresca tu película favorita con nuestras deliciosas bebidas 🥤</p>
+
+        <div class="menu-grid">
+            <!-- Gaseosa -->
+            <div class="producto">
+                <img src="colores.jpg" alt="Michelada de Colores">
+                <div class="info">
+                    <h3>Michelada de Colores</h3>
+                    <p>Clásicas y refrescantes</p>
+                    <div class="precio">$9.000</div>
+                </div>
+            </div>
+
+            <!-- Jugo Natural -->
+            <div class="producto">
+                <img src="granizado-frutos-rojos.jpg" alt="Granizada o Jugo de Frutos Rojos ">
+                <div class="info">
+                    <h3>Granizada o Jugo de Frutos Rojos</h3>
+                    <p>Hecho con frutas frescas de temporada.</p>
+                    <div class="precio">$12.000</div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="jugos-naturales.jpg" alt="Jugos Natureales ">
+                <div class="info">
+                    <h3>Jugos Natureales </h3>
+                    <p>Hecho con frutas frescas de temporada.</p>
+                    <div class="precio">$8.000</div>
+                </div>
+            </div>
+
+            <!-- Agua -->
+            <div class="producto">
+                <img src="gaseosa.jpg" alt="Gaseosa">
+                <div class="info">
+                    <h3>Gaseosa</h3>
+                    <p> Refrescantes y Clasicas</p>
+                    <div class="precio">$4.000</div>
+                </div>
+            </div>
+
+            <!-- Cerveza -->
+            <div class="producto">
+                <img src="michelada-frutos-rojos.jpg" alt="Michelada de Frutos Rojos">
+                <div class="info">
+                    <h3>Michelada de Frutos Rojos</h3>
+                    <p>Clásicas y refrescantes.</p>
+                    <div class="precio">$10.000</div>
+                </div>
+            </div>
+
+             <div class="producto">
+                <img src="micheladas.jpg" alt="Micheladas">
+                <div class="info">
+                    <h3>Micheladas</h3>
+                    <p>Clásicas y refrescantes.</p>
+                    <div class="precio">$6.000</div>
+                </div>
+            </div>
+
+             <div class="producto">
+                <img src="michelada-mango.jpg" alt="Michelada de Mango">
+                <div class="info">
+                    <h3>Michelada de Mango</h3>
+                    <p>Clásicas y refrescantes.</p>
+                    <div class="precio">$7.000</div>
+                </div>
+            </div>
+
+            <!-- Smoothie -->
+            <div class="producto">
+                <img src="granizados.jpg" alt="Granizados">
+                <div class="info">
+                    <h3>Granizados</h3>
+                    <p>Delicioso y cremoso, hecho con frutas frescas.</p>
+                    <div class="precio">$10.000</div>
+                </div>
+            </div>
+
+            <!-- Café o Té -->
+            <div class="producto">
+                <img src="cookie.jpg" alt="Malteada cookie">
+                <div class="info">
+                    <h3>Malteada Cookie</h3>
+                    <p>Bebidas frias para los que prefieren algo reconfortante.</p>
+                    <div class="precio">$10.000</div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="malteadas.jpg" alt="Malteadas">
+                <div class="info">
+                    <h3>Malteadas</h3>
+                    <p>Bebidas frias para los que prefieren algo reconfortante.</p>
+                    <div class="precio">$14.000</div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="plus.jpg" alt="Malteada Plus">
+                <div class="info">
+                    <h3>Malteada Plus</h3>
+                    <p>Bebidas frias para los que prefieren algo reconfortante.</p>
+                    <div class="precio">$18.000</div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="frape.jpg" alt="Frape">
+                <div class="info">
+                    <h3>Frape</h3>
+                    <p>Bebidas frias para los que prefieren algo reconfortante.</p>
+                    <div class="precio">$12.000</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 Cine Zona Plus. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Zona Plus | Visión</title>
+    <style>
+        /* ===========================
+           ESTILOS GENERALES
+        ============================ */
+        :root {
+            --rojo-principal: #c8102e;
+            --negro: #111;
+            --gris-oscuro: #222;
+            --gris-claro: #eee;
+            --blanco: #fff;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: var(--negro);
+            color: var(--gris-claro);
+            line-height: 1.6;
+        }
+
+        /* ===========================
+           ENCABEZADO Y MENÚ
+        ============================ */
+        header {
+            background-color: var(--rojo-principal);
+            text-align: center;
+            padding: 20px 0;
+            color: var(--blanco);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: var(--gris-oscuro);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 12px 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--rojo-principal);
+        }
+
+        /* ===========================
+           CONTENIDO PRINCIPAL
+        ============================ */
+        main {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--rojo-principal);
+            margin-bottom: 25px;
+        }
+
+        .vision-contenedor {
+            background-color: var(--gris-oscuro);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(200, 16, 46, 0.3);
+        }
+
+        .vision-contenedor p {
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .imagen-vision {
+            margin-top: 30px;
+        }
+
+        .imagen-vision img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            border: 3px solid var(--rojo-principal);
+        }
+
+        /* ===========================
+           SECCIÓN OBJETIVOS
+        ============================ */
+        .objetivos {
+            margin-top: 50px;
+        }
+
+        .objetivos h3 {
+            color: var(--rojo-principal);
+            margin-bottom: 20px;
+        }
+
+        .objetivos ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .objetivos li {
+            background: var(--gris-oscuro);
+            padding: 15px 25px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .objetivos li:hover {
+            background: var(--rojo-principal);
+        }
+
+        /* ===========================
+           PIE DE PÁGINA
+        ============================ */
+        footer {
+            background-color: var(--gris-oscuro);
+            color: var(--gris-claro);
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }
+
+        /* ===========================
+           RESPONSIVE DESIGN
+        ============================ */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Cine Zona Plus</h1>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="mision.html">Misión</a>
+        <a href="vision.html">Visión</a>
+        <a href="resena.html">Reseña Histórica</a>
+        <a href="cartelera.html">Cartelera</a>
+        <a href="promociones.html">Promociones 2x1</a>
+        <a href="menu-helados.html">Menú Helados</a>
+        <a href="menu-comidas.html">Comidas Rápidas</a>
+        <a href="menu-bebidas.html">Bebidas</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="Disenadores.html">Diseñadores</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <h2>Nuestra Visión</h2>
+
+        <div class="vision-contenedor">
+            <p>En <strong>Cine Zona Plus</strong>, nuestra visión es para el año 2030 queremos ser el lugar favorito para disfrutar, comer y divertirse. Nuestra meta es ofrecer calidad y un ambiente agradable. Lo lograremos con un servicio amable, compromisos y mejoras constantes en cada experiencia.</p>
+
+            <p>Queremos ser referentes en el sector, ofreciendo espacios modernos, sostenibles y accesibles, que combinen el arte, la tecnología y la cultura para transformar cada visita en un recuerdo inolvidable.</p>
+
+            <div class="imagen-vision">
+                <img src="lugar.jpg" alt="Visión de futuro del cine">
+            </div>
+        </div>
+
+        <section class="objetivos">
+            <h3>Nuestros Objetivos</h3>
+            <ul>
+                <li>Expandir nuestras salas a un lugar más amplio</li>
+                <li>Implementar tecnologías 4D y experiencias inmersivas</li>
+                <li>Ser un referente en sostenibilidad cinematográfica</li>
+                <li>Promover el cine independiente </li>
+                <li>Ofrecer atención personalizada y moderna</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 Cine Zona Plus. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
